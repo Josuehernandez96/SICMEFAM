@@ -47,7 +47,7 @@
 			 });
 
              $( "body" ).addClass( "login-layout" );
-             $( "body" ).css("background-image", "url('http://localhost/SICMEDIC/vistas/fondo1	.jpg')");
+             $( "body" ).css("background-image", "url('http://localhost/SICMEFAM/vistas/fondo1	.jpg')");
              $( "body" ).css("background-repeat","no-repeat");
              $( "body" ).css("background-position","center");
             
