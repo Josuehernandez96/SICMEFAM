@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Respaldo - SICMEDIC</title>
+
+    <meta name="description" content="top menu &amp; navigation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- page specific plugin styles -->
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+    <!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+
+    <!--para los campos de fecha -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
+
+    <!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+    <!-- inline styles related to this page -->
+
+    <!-- ace settings handler -->
+    <script src="assets/js/ace-extra.min.js"></script>
+
+    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+    <!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body class="no-skin">
+
+    <!--Inicio barra superior (logo y notificaciones) -->
+
+    <div id="navbar" class="navbar navbar-default    navbar-collapse       h-navbar ace-save-state">
+        <div class="navbar-container ace-save-state" id="navbar-container">
+
+                <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                        <span class="sr-only">Toggle sidebar</span>
+    
+                        <span class="icon-bar"></span>
+    
+                        <span class="icon-bar"></span>
+    
+                        <span class="icon-bar"></span>
+                    </button>
+
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="navbar-brand">
+                    <small>
+							<img src="logotipo.png" style="width: 50px;height: 35px;" >
+							SICMEDIC
+						</small>
+                </a>
+
+            </div>
+
+            <div class="navbar-buttons navbar-header pull-right  collapse navbar-collapse" role="navigation">
+                <ul class="nav ace-nav">
+
+                    <!--Notificacione de Medicamentos -->
+
+                    <li class="transparent dropdown-modal">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="ace-icon fa fa-calendar icon-animated-bell"></i>
+                        </a>
+
+                        <div class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#navbar-tasks">
+												Alertas  de Citas
+												<span class="badge badge-danger">4</span>
+											</a>
+                                    </li>
+
+
+                                </ul>
+                                <!-- .nav-tabs -->
+
+                                <div class="tab-content" >
+                                    <div id="navbar-tasks" class="tab-pane in active">
+                                        <ul class="dropdown-menu-right dropdown-navbar dropdown-menu">
+                                            <li class="dropdown-content">
+                                                <ul class="dropdown-menu dropdown-navbar">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="clearfix">
+                                                                <span class="pull-left">Tiene 8 Citas Pendiente este dia</span>
+                                                                <span class="pull-right">90%</span>
+                                                            </div>
+
+                                                            <div class="progress progress-mini progress-striped active">
+                                                                <div style="width:90%" class="progress-bar progress-bar-success"></div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown-footer">
+                                                <a href="#">
+														See tasks with details
+														<i class="ace-icon fa fa-arrow-right"></i>
+													</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.tab-pane -->
+
+                                    <div id="navbar-messages" class="tab-pane">
+                                        <ul class="dropdown-menu-right dropdown-navbar dropdown-menu">
+                                            <li class="dropdown-content">
+                                                <ul class="dropdown-menu dropdown-navbar">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Alex:</span> Ciao sociis natoque penatibus et auctor ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>a moment ago</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Susan:</span> Vestibulum id ligula porta felis euismod ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>20 minutes ago</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Bob:</span> Nullam quis risus eget urna mollis ornare ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>3:15 pm</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Kate:</span> Ciao sociis natoque eget urna mollis ornare ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>1:33 pm</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Fred:</span> Vestibulum id penatibus et auctor ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>10:09 am</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown-footer">
+                                                <a href="inbox.html">
+														See all messages
+														<i class="ace-icon fa fa-arrow-right"></i>
+													</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                </div>
+
+                                <!-- /.tab-content -->
+                            </div>
+                            <!-- /.tabbable -->
+                        </div>
+                    </li>
+
+
+                    <!--Notificacione de citas -->
+
+                    <li class="transparent dropdown-modal">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="ace-icon fa fa-medkit icon-animated-bell"></i>
+                        </a>
+
+                        <div class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#navbar-tasks">
+												Alertas  de medicamentos
+												<span class="badge badge-danger">4</span>
+											</a>
+                                    </li>
+
+
+                                </ul>
+                                <!-- .nav-tabs -->
+
+                                <div class="tab-content">
+                                    <div id="navbar-tasks" class="tab-pane in active">
+                                        <ul class="dropdown-menu-right dropdown-navbar dropdown-menu">
+                                            <li class="dropdown-content">
+                                                <ul class="dropdown-menu dropdown-navbar">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="clearfix">
+                                                                <span class="pull-left">quedan 8 unidades de Paracetamol</span>
+                                                                <span class="pull-right">90%</span>
+                                                            </div>
+
+                                                            <div class="progress progress-mini progress-striped active">
+                                                                <div style="width:90%" class="progress-bar progress-bar-success"></div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown-footer">
+                                                <a href="#">
+														See tasks with details
+														<i class="ace-icon fa fa-arrow-right"></i>
+													</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.tab-pane -->
+
+                                    <div id="navbar-messages" class="tab-pane">
+                                        <ul class="dropdown-menu-right dropdown-navbar dropdown-menu">
+                                            <li class="dropdown-content">
+                                                <ul class="dropdown-menu dropdown-navbar">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Alex:</span> Ciao sociis natoque penatibus et auctor ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>a moment ago</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Susan:</span> Vestibulum id ligula porta felis euismod ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>20 minutes ago</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Bob:</span> Nullam quis risus eget urna mollis ornare ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>3:15 pm</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Kate:</span> Ciao sociis natoque eget urna mollis ornare ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>1:33 pm</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+                                                            <span class="msg-body">
+																	<span class="msg-title">
+																		<span class="blue">Fred:</span> Vestibulum id penatibus et auctor ...
+                                                            </span>
+
+                                                            <span class="msg-time">
+																		<i class="ace-icon fa fa-clock-o"></i>
+																		<span>10:09 am</span>
+                                                            </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown-footer">
+                                                <a href="inbox.html">
+														See all messages
+														<i class="ace-icon fa fa-arrow-right"></i>
+													</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.tab-pane -->
+                                </div>
+
+                                <!-- /.tab-content -->
+                            </div>
+                            <!-- /.tabbable -->
+                        </div>
+                        <!-- /.dropdown-menu -->
+                    </li>
+
+                    <!--opciones de usuario-->
+
+                    <li class="light-blue dropdown-modal user-min">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
+                            <span class="user-info">
+									<small>Bienvenido/a,</small>
+									AnaLuisa
+								</span>
+
+                            <i class="ace-icon fa fa-caret-down"></i>
+                        </a>
+
+                        <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-cog"></i> Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="profile.html">
+                                    <i class="ace-icon fa fa-user"></i> Profile
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ace-icon fa fa-power-off"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <nav role="navigation" class="navbar-menu pull-left collapse navbar-collapse">
+
+            </nav>
+        </div>
+        <!-- /.navbar-container -->
+    </div>
+
+    <!--Fin barra superior (logo y notificaciones) -->
+
+    <div class="main-container ace-save-state" id="main-container">
+        <script type="text/javascript">
+            try {
+                ace.settings.loadState('main-container')
+            } catch (e) {}
+        </script>
+
+        <div id="sidebar" class="sidebar      h-sidebar                navbar-collapse collapse          ace-save-state">
+            <script type="text/javascript">
+                try {
+                    ace.settings.loadState('sidebar')
+                } catch (e) {}
+            </script>
+
+            <ul class="nav nav-list">
+
+
+                <li class="hover">
+                    <a href="" onclick="location.href='vista-paciente.html'" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-group"></i>
+                        <span class="menu-text">
+								&nbspPacientes&nbsp
+							</span>
+
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    
+                    
+                </li>
+
+                <li class="hover">
+                    <a href="" onclick="location.href='vista-citas.html';" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-calendar-check-o"></i>
+                        <span class="menu-text">
+									&nbsp&nbsp&nbsp&nbspCitas&nbsp&nbsp&nbsp&nbsp
+							</span>
+
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    
+
+                </li>
+
+                <li class="hover">
+                    <a href="#" onclick="location.href='vista-medicamentos.html'" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-medkit"></i>
+                        <span class="menu-text"> Medicamentos </span>
+
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    
+                </li>
+
+                <li class="active hover">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-lock"></i>
+                        <span class="menu-text"> Seguridad </span>
+
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    <b class="arrow"></b>
+
+                    <ul class="submenu">
+                        <li class=" active hover">
+                            <a href="vista-respaldo.html">
+                                <i class="menu-icon fa fa-caret-right"></i> Respaldo de Información
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+
+                        <li class="hover">
+                            <a href="vista-usuario.html">
+                                <i class="menu-icon fa fa-caret-right"></i> Usuarios
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+                        <li class="hover">
+                            <a href="vista-bitacora.html">
+                                <i class="menu-icon fa fa-caret-right"></i> Bitacora
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="hover" data-toggle="modal" style="cursor: pointer" data-target="#modal-acerca">
+                    <a >
+                        <i class="menu-icon fa fa-info-circle"></i>
+
+                        <span class="menu-text">
+								Acerca de
+
+							</span>
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+
+
+
+
+
+            </ul>
+            <!-- /.nav-list -->
+        </div>
+
+        <!--inicio contenido de la pagina -->
+
+        <div class="main-content">
+            <div class="main-content-inner">
+                <div class="page-content" style="background: #edf7f7">
+
+
+                        <div class="page-header col-xs-12">
+                                <div class="widget-header widget-header-large">
+                                        <h3 class="widget-title grey lighter">
+                                            <i class="ace-icon fa fa-lock blue"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                RESPALDOS DE INFORMACIÓN
+                                                </font></font></h3>
+    
+                                        
+    
+                                        
+                                    </div>
+                        </div>
+                    <!-- /.page-header -->
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- PAGE CONTENT BEGINS -->
+
+
+                            <div class="col-sm-12">
+                                    <div class="tabbable">
+                                        
+                                        
+                                        <div class="tab-content">
+                                            <div  class="tab-pane fade in active">
+                                                    
+                                                    <div class="row">
+                                                            <div class="col-xs-12" >
+                            
+                                                                <div class="clearfix" style="background: #2aa5a5;color: #FFFF;padding-top: 5px;padding-right: 5px">
+                            
+                                                                    <!--inicio area de botonos de tabla-->
+                            
+                                                                    <div class="pull-right tableTools-container" >
+                            
+                                                                        <div class="dt-buttons btn-overlap btn-group" >
+                            
+                                                                            <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table" data-original-title="" title="" data-toggle="modal" data-target="#modal-table">
+                                                                                <span>
+                                                                                        <img src="btn-nuevo.png" style="width: 30px;height: 30px;" >&nbsp;Nuevo</span>
+                                                                                </span>
+                                                                            </a>
+                            
+                                                                            
+                                                                            <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table" data-original-title="" title="" >
+                                                                                <span>
+                                                                                        <img src="btn-ayuda.png" style="width: 30px;height: 30px;" >&nbsp;Ayuda</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                            
+                                                                        <!--fin area de botonos-->
+                            
+                                                                    </div>
+                            
+                                                                    <!--fin area de botonos de tabla-->
+                            
+                                                                </div>
+                            
+                            
+                                                                <!-- div.table-responsive -->
+                            
+                                                                <!-- div.dataTables_borderWrap -->
+                                                                <div>
+                                                                    <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
+                            
+                                                                        <!--inicio Filtros de Tabla-->
+                            
+                                                                        <div class="row tab-content"  >
+                            
+                                                                            <div class="col-xs-8 ">
+
+                                                                                    <div class="col-xs-3">
+                                                                                <div class="dataTables_length" id="dynamic-table_length" >
+                                                                                    <label>mostrar
+                                                                                            <select name="dynamic-table_length"  class="form-control form-group">
+                                                                                            <option value="10">10</option><option value="25">25</option><option value="50">50</option>
+                                                                                            <option value="100">100</option></select> 
+                                                                                            Registros</label>
+                                                                                </div>
+                                                                                    </div>
+                                                                                    <div class="col-xs-4">
+                                                                                
+                                                                                </div>
+                            
+                                                                            </div>
+                            
+                                                                            
+                            
+                                                                            
+                            
+                            
+                                                                            
+                            
+                                                                        </div>
+                            
+                                                                        <!--Fin Filtros de Tabla-->
+                            
+                                                                        <table id="dynamic-table" class="table table-striped table-bordered table-hover   dataTable no-footer" role="grid">
+                            
+                                                                            <thead >
+                                                                                <tr role="row" style="background: #ffff">
+                                                                                    <th style="width: 70%"><strong>ARCHIVO</strong></th>
+                                                                                    <th style="width: 17%"><strong>CREADO </strong></th>
+                                                                                    <th style="width: 10%"><strong>ACCION</strong></th>
+                                                                                   
+                                                                                </tr>
+                                                                            </thead>
+                            
+                                                                            <tbody>
+                            
+                                                                                
+                                                                                <tr role="row" class="odd active">
+                            
+                            
+                                                                                        <td>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
+                                                                                        </td>
+                                
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
+                                
+                                
+                                
+                                
+                                                                                        <td>
+                                                                                            
+                                
+                                                                                            <div class="hidden-sm hidden-xs action-buttons">
+                                
+                                                                                                   
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
+                                                                                    <tr role="row" class="odd active">
+                            
+                            
+                                                                                        <td>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
+                                                                                        </td>
+                                
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
+                                
+                                
+                                
+                                
+                                                                                        <td>
+                                                                                            
+                                
+                                                                                            <div class="hidden-sm hidden-xs action-buttons">
+                                
+                                                                                                   
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
+                                                                                    <tr role="row" class="odd active">
+                            
+                            
+                                                                                        <td>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
+                                                                                        </td>
+                                
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
+                                
+                                
+                                
+                                
+                                                                                        <td>
+                                                                                            
+                                
+                                                                                            <div class="hidden-sm hidden-xs action-buttons">
+                                
+                                                                                                   
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
+                                                                                    <tr role="row" class="odd active">
+                            
+                            
+                                                                                        <td>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
+                                                                                        </td>
+                                
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
+                                
+                                
+                                
+                                
+                                                                                        <td>
+                                                                                            
+                                
+                                                                                            <div class="hidden-sm hidden-xs action-buttons">
+                                
+                                                                                                   
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
+                                                                                    <tr role="row" class="odd active">
+                            
+                            
+                                                                                        <td>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
+                                                                                        </td>
+                                
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
+                                
+                                
+                                
+                                
+                                                                                        <td>
+                                                                                            
+                                
+                                                                                            <div class="hidden-sm hidden-xs action-buttons">
+                                
+                                                                                                   
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
+                                                                                    <tr role="row" class="odd active">
+                            
+                            
+                                                                                        <td>
+                                                                                            <a href="#" class="info tooltip-info " data-placement="right"   ><i class="ace-icon fa fa-folder-open-o bigger-140"  ></i> respaldo-sicmedic-18012019-075649-am</a>
+                                                                                        </td>
+                                
+                                                                                        <td>18/enero/2019 07:56:49 am</td>
+                                
+                                
+                                
+                                
+                                                                                        <td>
+                                                                                            
+                                
+                                                                                            <div class="hidden-sm hidden-xs action-buttons">
+                                
+                                                                                                   
+                                                                                                
+                                
+                                                                                                <a class="green tooltip-info" href="#" data-rel="tooltip" title="restaurar" >
+                                                                                                    <i class="ace-icon fa fa-undo bigger-180"></i>
+                                                                                                </a>
+                                
+                                                                                                <a class="red tooltip-info" href="#" data-rel="tooltip" title="Eliminar ">
+                                                                                                    <i class="ace-icon fa fa-trash bigger-180"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                
+                                                                                            <div class="hidden-md hidden-lg">
+                                                                                                <div class="inline pos-rel">
+                                                                                                    <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                                                                                            <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                                                                                        </button>
+                                
+                                                                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+                                                                                                                <span class="blue">
+                                                                                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
+                                                                                                                <span class="green">
+                                                                                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                
+                                                                                                        <li>
+                                                                                                            <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
+                                                                                                                <span class="red">
+                                                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                
+                                                                                    </tr>
+                                                                                    
+                                                                                       
+                                                                                    
+                                                                                    
+                                                                                
+                            
+                            
+                            
+                            
+                            
+                                                                            </tbody>
+                                                                        </table>
+                            
+                            
+                                                                        <!--PIE DE TABLA (PAGINACION DE TABLA)-->
+                                                                        <div class="row tab-content" >
+                                                                            <div class="col-xs-6">
+                                                                                <div class="dataTables_info" id="dynamic-table_info" role="status" aria-live="polite">
+                                                                                    Mostrando 1 a 10 de 23 registros
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-6">
+                                                                                <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
+                                                                                    <ul class="pagination">
+                                                                                        <li class="paginate_button previous disabled" aria-controls="dynamic-table" tabindex="0" id="dynamic-table_previous">
+                                                                                            <a href="#">Previos</a>
+                                                                                        </li>
+                                                                                        <li class="paginate_button active" aria-controls="dynamic-table" tabindex="0"><a href="#">1</a>
+                                                                                        </li>
+                                                                                        <li class="paginate_button " aria-controls="dynamic-table" tabindex="0"><a href="#">2</a>
+                                                                                        </li>
+                                                                                        <li class="paginate_button " aria-controls="dynamic-table" tabindex="0"><a href="#">3</a>
+                                                                                        </li>
+                                                                                        <li class="paginate_button next" aria-controls="dynamic-table" tabindex="0" id="dynamic-table_next"><a href="#">Siguiente</a>
+                                                                                        </li>
+                            
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                            
+                            
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                 <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+            
+                                            
+            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                           
+
+
+
+
+
+
+
+                            <!-- PAGE CONTENT ENDS -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.page-content -->
+            </div>
+        </div>
+
+        <!--fin contenido de la pagina -->
+
+        <!--inicio pie de pagina -->
+
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <span class="bigger-120 red">
+							<span class="bolder">UES-FMP Todos los Derechos Reservados</span> &copy; <span class="bolder">2019</span>
+                    </span>
+
+                    &nbsp; &nbsp;
+                    <img src="minerva.png" style="width: 45;height: 50px;">
+                </div>
+            </div>
+        </div>
+
+        <!--fin pie de pagina -->
+
+        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+            <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+        </a>
+
+        <!--INICIO VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+        <div id="modal-table" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										<span class="white">&times;</span>
+									</button>
+                            <strong>Nuevo Respaldo</strong>
+                        </div>
+                    </div>
+                    <!-- CONTENIDO DE MODAL -->
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+
+                        <!--FORMULARIO PARA REGISTRO DE PACIENTE-->
+                        <form>
+
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+                                    <div class="tabbable">
+                                        
+                                        
+                                        <div class="tab-content" style="height: 100px">
+                                            <div id="home" class="tab-pane fade in active">
+
+                                                    <div class="form-group col-lg-6">
+                                                            <label for="inputName">Nombre de Archivo</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+                                                    
+                                                        <div class="form-group col-lg-6">
+                                                            <label for="inputName">Fecha de Creacion </label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+
+                                            
+                                            </div>
+
+                                            <div id="messages" class="tab-pane fade">
+
+                                                    <div class="form-group col-lg-3">
+
+                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                            
+                                                               
+                                                
+                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                            
+                                                
+                                                
+                                                        </div>
+
+                                                        <div class="form-group col-lg-3">
+
+                                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                
+                                                                   
+                                                    
+                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                
+                                                    
+                                                    
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
+                                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                </div>
+                                                                <div class="form-group col-lg-12">
+
+                                                                        <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                    </div>
+
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top " >
+
+
+                        <button class="btn btn-primary btn-white btn-round pull-left " style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
+
+								<img src="btn-agregar.png" style="width: 30px;height: 30px">  <strong>Crear</strong>
+
+								</button>
+
+
+                        <button class=" btn btn-danger btn-white btn-round pull-left" style="margin-top: 10px;color:#2aa5a5" data-dismiss="modal">
+
+								<img src="btn-cancelar.png" style="width: 30px;height: 30px;"><strong> Cancelar
+                                </strong> 
+								</button>
+
+
+
+                    </div>
+
+                </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
+            </div>
+        </div>
+
+        <!--FIN VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+
+
+          <!--INICIO VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+        <div id="modal-table" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										<span class="white">&times;</span>
+									</button>
+                            <strong>Nuevo Paciente</strong>
+                        </div>
+                    </div>
+                    <!-- CONTENIDO DE MODAL -->
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+
+                        <!--FORMULARIO PARA REGISTRO DE PACIENTE-->
+                        <form>
+
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="active">
+                                                <a data-toggle="tab" href="#home">
+                                                    <i class="green ace-icon fa fa-user bigger-120"></i>
+                                                    Datos Basicos
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a data-toggle="tab" href="#messages">
+                                                        <i class="green ace-icon fa fa-phone bigger-120"></i>
+                                                    Datos de Contacto
+                                                    <span class="badge badge-danger"></span>
+                                                </a>
+                                            </li>
+
+                                            
+                                        </ul>
+                                        
+                                        <div class="tab-content">
+                                            <div id="home" class="tab-pane fade in active">
+
+                                                    <div class="form-group col-lg-6">
+                                                            <label for="inputName">Nombres</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+                                                    
+                                                        <div class="form-group col-lg-6">
+                                                            <label for="inputName">Apellidos</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+
+                                                        <div class="form-group col-lg-6">
+                                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i> Género</label>
+                                                                <select class="form-control " id="form-field-select-1">
+                                                                        <option value="AL">Masculino</option>
+                                                                        <option value="AK">Femenino</option>		
+                                                                </select>
+                                                        </div>
+
+                                                        <div class="form-group col-lg-6">
+                                                                <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha de nacimiento</label>
+                                                                <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">  
+                                                        </div>
+
+                                                        
+                                                                <div class="form-group col-lg-6">
+
+                                                                        <label for="inputName"><i class="fa fa-credit-card bigger-110"></i> Documento de Identificación</label>
+                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                            
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6">
+
+                                                                            <label for="inputName">Nombre del Encargado</label>
+                                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                
+                                                                        </div>
+
+
+                                                        
+
+                                                 <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            <div id="messages" class="tab-pane fade">
+
+                                                    <div class="form-group col-lg-3">
+
+                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                            
+                                                               
+                                                
+                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                            
+                                                
+                                                
+                                                        </div>
+
+                                                        <div class="form-group col-lg-3">
+
+                                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                
+                                                                   
+                                                    
+                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                
+                                                    
+                                                    
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
+                                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                </div>
+                                                                <div class="form-group col-lg-12">
+
+                                                                        <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                    </div>
+
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top " >
+
+
+                        <button class="btn btn-primary pull-left" style="margin-top: 10px" data-dismiss="modal">
+
+								<img src="btn-agregar.png" style="width: 30px;height: 30px;"> <strong>Guardar</strong>
+
+								</button>
+
+
+                        <button class=" btn btn-default pull-left" style="margin-top: 10px" data-dismiss="modal">
+
+								<img src="btn-cancelar.png" style="width: 30px;height: 30px;"> <strong>Cancelar</strong>
+
+								</button>
+
+
+
+                    </div>
+
+                </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
+            </div>
+        </div>
+
+        <!--FIN VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+
+
+         <!--INICIO VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+         <div id="modal-acerca" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										<span class="white">&times;</span>
+									</button>
+                            <strong>Acerca de</strong>
+                        </div>
+                    </div>
+                    <!-- CONTENIDO DE MODAL -->
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+
+                        
+                        <!--FORMULARIO PARA REGISTRO DE PACIENTE-->
+                        <form>
+
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+                                    <div class="tabbable">
+                                        
+                                        
+                                        <div class="tab-content">
+                                            <div id="home" class="tab-pane fade in active">
+                                                
+                                                <strong>SICMEDIC</strong>  surge al conocer la situación la necesidad del consultorio médica de la Doctor
+                                                Ana Luisa Velázquez, puesto que ellos no contaban con un sistema informático para la sistematización de sus 
+                                                pacientes.
+                                                <br>
+                                                <br>
+                                                Para la elaboración  de dicho sistema se tomaron muy en cuenta las factibilidades operativas, técnicas y económicas, las cuales
+                                                nos brindaron la información necesaria para la realización de SICMEDIC
+                                                <br>
+                                                <br>
+                                                <strong>Desarolladores:</strong>
+<br>
+                                                 David Flores Guzmán 
+<br>
+                                                 Oscar René Muñoz Garcia
+<br>
+                                                 Emerson Josué Palacios 
+                                                 <br>
+                                                 Miguel Ángel Beltran Morán
+                                                                                                  <br>
+                                                                                                  <strong class="pull-right"> Diseño de Sistemas II</strong> 
+
+
+                                                        
+
+                                                 <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            <div id="messages" class="tab-pane fade">
+
+                                                    <div class="form-group col-lg-3">
+
+                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                            
+                                                               
+                                                
+                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                            
+                                                
+                                                
+                                                        </div>
+
+                                                        <div class="form-group col-lg-3">
+
+                                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                
+                                                                   
+                                                    
+                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                
+                                                    
+                                                    
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
+                                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                </div>
+                                                                <div class="form-group col-lg-12">
+
+                                                                        <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                    </div>
+
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top "  >
+
+
+                        
+                            <button class="btn btn-warning btn-white btn-round pull-right " style="margin-top: 10px" data-dismiss="modal">
+
+                                <i class="fa fa-check"></i><strong>Aceptar</strong>
+
+                               </button>
+                        
+
+
+                        
+
+
+
+                    </div>
+
+                </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
+            </div>
+        </div>
+
+        <!--FIN VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+
+          <!--INICIO VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+          <div id="modal-modificar" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										<span class="white">&times;</span>
+									</button>
+                            <strong>Modificar Paciente</strong>
+                        </div>
+                    </div>
+                    <!-- CONTENIDO DE MODAL -->
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+
+                        <!--FORMULARIO PARA REGISTRO DE PACIENTE-->
+                        <form>
+
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="active">
+                                                <a data-toggle="tab" href="#home3">
+                                                    <i class="green ace-icon fa fa-user bigger-120"></i>
+                                                    Datos Basicos
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a data-toggle="tab" href="#messages3">
+                                                        <i class="green ace-icon fa fa-phone bigger-120"></i>
+                                                    Datos de Contacto
+                                                    <span class="badge badge-danger"></span>
+                                                </a>
+                                            </li>
+
+                                            
+                                        </ul>
+                                        
+                                        <div class="tab-content">
+                                            <div id="home3" class="tab-pane fade in active">
+
+
+                                                    <div class="form-group col-lg-12">
+                                                            <label for="inputName">Expediente</label>
+                                                            <input type="text" class="form-control" id="inputName" style="width: 25%" placeholder="" disabled value="1234" />
+                                                        </div>
+
+                                                    <div class="form-group col-lg-6">
+                                                            <label for="inputName">Nombres</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+                                                    
+                                                        <div class="form-group col-lg-6">
+                                                            <label for="inputName">Apellidos</label>
+                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+
+                                                        <div class="form-group col-lg-6">
+                                                                <label for="inputMessage"><i class="fa fa-male bigger-110"></i> Género</label>
+                                                                <select class="form-control " id="form-field-select-1">
+                                                                        <option value="AL">Masculino</option>
+                                                                        <option value="AK">Femenino</option>		
+                                                                </select>
+                                                        </div>
+
+                                                        <div class="form-group col-lg-6">
+                                                                <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha de nacimiento</label>
+                                                                <input class="form-control date-picker input-mask-date" id="form-field-mask-1" type="text" data-date-format="dd-mm-yyyy">  
+                                                        </div>
+
+                                                        
+                                                                <div class="form-group col-lg-6">
+
+                                                                        <label for="inputName"><i class="fa fa-credit-card bigger-110"></i> Documento de Identificación</label>
+                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                            
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6">
+
+                                                                            <label for="inputName">Nombre del Encargado</label>
+                                                                            <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                
+                                                                        </div>
+
+
+                                                        
+
+                                                 <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            <div id="messages3" class="tab-pane fade">
+
+                                                    <div class="form-group col-lg-3">
+
+                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                            
+                                                               
+                                                
+                                                                <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                            
+                                                
+                                                
+                                                        </div>
+
+                                                        <div class="form-group col-lg-3">
+
+                                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                
+                                                                   
+                                                    
+                                                                    <input class="form-control input-mask-phone" type="text" id="telefono" />
+                                                                
+                                                    
+                                                    
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
+                                                                    <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                </div>
+                                                                <div class="form-group col-lg-12">
+
+                                                                        <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                                                                    </div>
+
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                                                    <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top " >
+
+
+                        <button class="btn btn-primary btn-white btn-round pull-left" style="margin-top: 10px" data-dismiss="modal">
+
+								<img src="btn-agregar.png" style="width: 30px;height: 30px;"> <strong>Guardar</strong>
+
+								</button>
+
+
+                        <button class=" btn btn-danger btn-white btn-round pull-left" style="margin-top: 10px" data-dismiss="modal">
+
+								<img src="btn-cancelar.png" style="width: 30px;height: 30px;"> <strong>cancelar</strong>
+
+								</button>
+
+
+
+                    </div>
+
+                </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
+            </div>
+        </div>
+
+        <!--FIN VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+
+
+
+        <!--INICIO VENTANA EMERGENTE DE FORMULARIO PARA PERFIL DE PACIENTES -->
+
+        <div id="modal-perfil" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header no-padding">
+                        <div class="table-header" style="background: #2aa5a5">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										<span class="white">&times;</span>
+									</button>
+                            <strong>Perfil de Paciente</strong>
+                        </div>
+                    </div>
+                    <!-- CONTENIDO DE MODAL -->
+                    <div class="modal-body no-padding" style="background: #fcf8e3">
+
+                        <!--FORMULARIO PARA REGISTRO DE PACIENTE-->
+                        <form>
+
+
+                            <div class="col-sm-12" style="margin-top: 10px">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            
+
+                                            
+
+                                            
+                                        </ul>
+                                        
+                                        <div class="tab-content">
+                                            <div id="home" class="tab-pane fade in active">
+
+                                                    <div class="form-group col-lg-6">
+                                                            <label for="inputName">Nombres</label>
+                                                            <input type="text" style="background: #eff3f8;color:#2aa5a5" value="MAURICIO" class="form-control" id="inputName" placeholder="" />
+                                                        </div>
+                                                    
+                                                        <div class="form-group col-lg-6">
+                                                            <label for="inputName">Apellidos</label>
+                                                            <input type="text" style="background: #eff3f8;color:#2aa5a5" class="form-control" value="FUNES QUINTALLINA" id="inputName" placeholder="" />
+                                                        </div>
+
+                                                        <div class="form-group col-lg-6">
+                                                            <label for="inputName">Género</label>
+                                                            <input type="text" style="background: #eff3f8;color:#2aa5a5" class="form-control" 
+                                                            id="inputName" value="MASCULINO" placeholder="" />
+                                                        </div>
+
+                                                        <div class="form-group col-lg-6">
+                                                                <label for="inputName"><i class="fa fa-calendar bigger-110"></i> Fecha de nacimiento</label>
+                                                                <input class="form-control  " value="12-06-1996 (19 años)"  style="background: #eff3f8;color:#2aa5a5" id="form-field-mask-1" type="text" >  
+                                                        </div>
+
+                                                        
+                                                                <div class="form-group col-lg-6">
+
+                                                                        <label for="inputName"><i class="fa fa-credit-card bigger-110"></i> Documento de Identificación</label>
+                                                                        <input type="text" style="background: #eff3f8;color:#2aa5a5" value="1234568-7" class="form-control" id="inputName" placeholder="" />
+                                                            
+                                                                    </div>
+                                                                    <div class="form-group col-lg-6">
+
+                                                                            <label for="inputName">Nombre del Encargado</label>
+                                                                            <input type="text" class="form-control" style="background: #eff3f8;color:#2aa5a5" id="inputName" value="DAVID FLORES CASTILLOS"  placeholder="" />
+                                                                
+                                                                        </div>
+
+                                                                        <div class="form-group col-lg-3">
+
+                                                                            <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 1</label>
+                                                                            
+                                                                               
+                                                                
+                                                                                <input class="form-control input-mask-phone" style="background: #eff3f8;color:#2aa5a5"   value="6666-6666" type="text" id="telefono" />
+                                                                            
+                                                                
+                                                                
+                                                                        </div>
+                
+                                                                        <div class="form-group col-lg-3">
+                
+                                                                                <label for="telefono"><i class="ace-icon fa fa-phone"></i> Teléfono 2</label>
+                                                                                
+                                                                                   
+                                                                    
+                                                                                    <input class="form-control input-mask-phone" style="background: #eff3f8;color:#2aa5a5"   value="6666-6666" type="text" id="telefono" />
+                                                                                
+                                                                    
+                                                                    
+                                                                            </div>
+                                                                            <div class="form-group col-lg-6">
+                                                                                    <label for="inputName"><i class="ace-icon fa fa-envelope"></i> Correo electrónico(opcional)</label>
+                                                                                    <input type="text" class="form-control" style="background: #eff3f8;color:#2aa5a5"   value="davidflores.guzman.dfg@gmail.com" id="inputName" placeholder="" />
+                                                                                </div>
+                                                                                <div class="form-group col-lg-12">
+                
+                                                                                        <label for="inputName"><i class="ace-icon fa fa-home"></i> Dirección</label>
+                                                                                        <input type="text" class="form-control"  style="background: #eff3f8;color:#2aa5a5"   value="Colonia espiga de oro casa#3 " id="inputName" placeholder="" />
+                                                                                    </div>
+
+
+
+
+                                                        
+
+                                                 <p style="visibility: hidden">Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                           
+                                            </div>
+
+                                           
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                    <!-- /.PIE DE VENTANA EMERGENTE -->
+
+                    <div class="modal-footer no-margin-top " >
+
+
+                        <button class="btn btn-success btn-white btn-roundy pull-left" style="margin-top: 10px" data-dismiss="modal">
+
+								<img src="btn-impresora.png" style="width: 30px;height: 30px;"> <strong>Imprimir</strong>
+
+								</button>
+
+
+                        <button class=" btn btn-danger btn-white btn-round pull-left" style="margin-top: 10px" data-dismiss="modal">
+
+								<img src="btn-cancelar.png" style="width: 30px;height: 30px;"> <strong>Cancelar</strong>
+
+								</button>
+
+
+
+                    </div>
+
+                </div>
+                <!-- /.CONTENIDO DE VENTANA EMERGENTE -->
+
+            </div>
+        </div>
+
+        <!--FIN VENTANA EMERGENTE DE FORMULARIO PARA REGISTRO DE PACIENTES -->
+
+
+
+
+
+
+
+    </div>
+    <!-- /.main-container -->
+
+    <!--  scripts basicos -->
+
+    <!--[if !IE]> -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+
+    <!-- <![endif]-->
+
+    <!--para cargar vista mobil -->
+    <script type="text/javascript">
+        if ('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+
+
+
+
+    <script src="assets/js/bootstrap.min.js">
+    </script>
+
+    <!-- script de puglin especificos de la pagina -->
+
+    <!-- ace scripts(plantilla) -->
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
+
+    <!-- para los campos de fecha -->
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- para mascara de los campos de fecha -->
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+
+    <!-- script en línea relacionados con esta página -->
+    <script type="text/javascript">
+        jQuery(function($) {
+            var $sidebar = $('.sidebar').eq(0);
+            if (!$sidebar.hasClass('h-sidebar')) return;
+
+            $(document).on('settings.ace.top_menu', function(ev, event_name, fixed) {
+                if (event_name !== 'sidebar_fixed') return;
+
+                var sidebar = $sidebar.get(0);
+                var $window = $(window);
+
+                //return if sidebar is not fixed or in mobile view mode
+                var sidebar_vars = $sidebar.ace_sidebar('vars');
+                if (!fixed || (sidebar_vars['mobile_view'] || sidebar_vars['collapsible'])) {
+                    $sidebar.removeClass('lower-highlight');
+                    //restore original, default marginTop
+                    sidebar.style.marginTop = '';
+
+                    $window.off('scroll.ace.top_menu')
+                    return;
+                }
+
+
+                var done = false;
+                $window.on('scroll.ace.top_menu', function(e) {
+
+                    var scroll = $window.scrollTop();
+                    scroll = parseInt(scroll / 4); //move the menu up 1px for every 4px of document scrolling
+                    if (scroll > 17) scroll = 17;
+
+
+                    if (scroll > 16) {
+                        if (!done) {
+                            $sidebar.addClass('lower-highlight');
+                            done = true;
+                        }
+                    } else {
+                        if (done) {
+                            $sidebar.removeClass('lower-highlight');
+                            done = false;
+                        }
+                    }
+
+                    sidebar.style['marginTop'] = (17 - scroll) + 'px';
+                }).triggerHandler('scroll.ace.top_menu');
+
+            }).triggerHandler('settings.ace.top_menu', ['sidebar_fixed', $sidebar.hasClass('sidebar-fixed')]);
+
+            $(window).on('resize.ace.top_menu', function() {
+                $(document).triggerHandler('settings.ace.top_menu', ['sidebar_fixed', $sidebar.hasClass('sidebar-fixed')]);
+            });
+            // para cargar componenete popover que muestra +datos de paciente
+            $('[data-rel=popover]').popover({
+                html: true
+            });
+
+            $('[data-rel=tooltip]').tooltip();
+
+            $('.date-picker').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+
+            $.mask.definitions['~'] = '[+-]';
+
+            $('.input-mask-date').mask('99/99/9999');
+
+        });
+    </script>
+
+</body>
+
+</html>
