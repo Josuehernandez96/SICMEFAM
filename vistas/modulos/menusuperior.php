@@ -70,7 +70,7 @@ if ($_REQUEST["view"] == "inicio") {
 if ($_REQUEST["view"] == "paciente") {
     $menu4 = "active";
 }
-if ($_REQUEST["view"] == "listadopaciente") {
+if ($_REQUEST["view"] == "vista-paciente.php") {
     $menu5 = "active";
     $submenu1 = "active";
 }
@@ -163,7 +163,7 @@ if ($_REQUEST["view"] == "reporteusuario") {
 
             <ul class="submenu">
                 <li class="hover <?php echo $submenu1; ?>">
-                    <a href="listadopaciente">
+                    <a href="vista-paciente.php">
                         <i class="menu-icon fa fa-caret-right"></i> Listado de Pacientes
                     </a>
 
