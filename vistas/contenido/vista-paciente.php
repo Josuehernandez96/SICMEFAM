@@ -7,7 +7,7 @@
                 <i class="ace-icon fa fa-group"></i>/
                 <font style="vertical-align: inherit;">
 
-                    PACIENTES
+                    PACIENTES 
 
 
                 </font>
