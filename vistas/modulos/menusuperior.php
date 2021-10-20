@@ -163,7 +163,7 @@ if ($_REQUEST["view"] == "reporteusuario") {
 
             <ul class="submenu">
                 <li class="hover <?php echo $submenu1; ?>">
-                    <a href="vista-paciente.php">
+                    <a href="./vistas/contenido/vista-paciente.php" class="dropdown-toggle">
                         <i class="menu-icon fa fa-caret-right"></i> Listado de Pacientes
                     </a>
 
