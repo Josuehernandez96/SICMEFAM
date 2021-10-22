@@ -44,7 +44,7 @@
 
                                                 <a class="dt-button buttons-collection buttons-colvis btn-primary btn-bold"color="#E6FAFB" aria-controls="dynamic-table" data-original-title="" title="" data-toggle="modal" data-backdrop="static" data-keyboard="false" onclick="nuevoregistro()" data-target="#modal-rgpaciente">
                                                     <span>
-                                                        <img src="<?php echo SERVERURL; ?>vistas/agregar-archivo.png" style="width: 40px;height: 40px;">&nbsp;Nuevo</span>
+                                                        <img src="<?php echo SERVERURL; ?>vistas/btn-agregar.png" style="width: 40px;height: 40px;">&nbsp;Nuevo</span>
                                                     </span>
                                                 </a>
 
