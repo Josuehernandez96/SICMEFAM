@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-10-2021 a las 01:43:01
+-- Tiempo de generación: 23-10-2021 a las 01:47:18
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -149,16 +149,15 @@ CREATE TABLE `tabpersonal` (
   `direccion` varchar(200) NOT NULL,
   `correo` varchar(50) NOT NULL,
   `fecha_ingreso` date NOT NULL,
-  `salario` decimal(10,0) NOT NULL,
-  `cargo` varchar(20) NOT NULL
+  `salario` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `tabpersonal`
 --
 
-INSERT INTO `tabpersonal` (`idpersonal`, `dui_personal`, `nombre_personal`, `apellido_personal`, `telefono_personal`, `sexo`, `direccion`, `correo`, `fecha_ingreso`, `salario`, `cargo`) VALUES
-(1, '09087654-0', 'Josue', 'Hernandez', '6312-2343', 'M', 'san lorenzo, san vicente', 'josuehernandez0096@gmail.com', '2021-10-20', '340', 'ADMINISTRADOR');
+INSERT INTO `tabpersonal` (`idpersonal`, `dui_personal`, `nombre_personal`, `apellido_personal`, `telefono_personal`, `sexo`, `direccion`, `correo`, `fecha_ingreso`, `salario`) VALUES
+(1, '09087654-0', 'Josue', 'Hernandez', '6312-2343', 'M', 'san lorenzo, san vicente', 'josuehernandez0096@gmail.com', '2021-10-20', '340');
 
 -- --------------------------------------------------------
 
@@ -230,15 +229,17 @@ CREATE TABLE `tabusuario` (
   `idusuario` int(11) NOT NULL,
   `idpersonal` int(11) NOT NULL,
   `usuario` varchar(20) NOT NULL,
-  `contraseña` text NOT NULL
+  `contrasena` text NOT NULL,
+  `estado` int(11) NOT NULL,
+  `tipo` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `tabusuario`
 --
 
-INSERT INTO `tabusuario` (`idusuario`, `idpersonal`, `usuario`, `contraseña`) VALUES
-(1, 1, 'JOSUE', '????^?PU?}l???');
+INSERT INTO `tabusuario` (`idusuario`, `idpersonal`, `usuario`, `contrasena`, `estado`, `tipo`) VALUES
+(1, 1, 'JOSUE', '????^?PU?}l???', 0, '');
 
 --
 -- Índices para tablas volcadas

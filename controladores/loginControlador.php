@@ -124,9 +124,9 @@ class loginControlador extends loginModelo
 		$correo = mainModel::limpiar_cadena($_POST['correo']);
 
 
-		$consulta3 = mainModel::ejecutar_consulta_simple("SELECT * FROM tusuario WHERE tusuario.correo= '$correo' AND estado=1");
+		$consulta3 = mainModel::ejecutar_consulta_simple("SELECT * FROM tabusuario WHERE tabusuario.correo= '$correo' AND estado=1");
 		$ec = $consulta3->rowCount();
-		$idusuario="1234";
+		$idusuario="12345";
 		foreach ($consulta3 as $row) {
 			$idusuario=$row['idusuario'];
 			$nombrep = $row['nombrep'];
