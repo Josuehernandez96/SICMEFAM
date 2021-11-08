@@ -324,7 +324,10 @@ class usuarioControlador extends usuarioModelo
 							<div class="btn-toolbar inline middle no-margin">
 								<div data-toggle="buttons" class="btn-group no-margin">
 
+
+
 									<button class="btn btn-success btn-white btn-round btn-lg tooltip-info " onclick="ExtraerDatosMod(' . $row['idusuario'] . ')" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#modal-rgusuario" data-rel="tooltip" title="Modificar"><i class="fa fa-edit"></i></button>';
+									
 
 			if ($_SESSION['idusuario_sbp'] != $row['idusuario']) {
 
@@ -343,7 +346,7 @@ class usuarioControlador extends usuarioModelo
 							<div class="col-xs-12 col-sm-3 center">
 								<div>
 									<span class="profile-picture">
-										<img id="avatar" class="editable img-responsive" style="height: 120px" alt="Alexs Avatar" src="';echo SERVERURL.'vistas/assets/images/avatars/admin.jpg" />
+										<img id="avatar" class="editable img-responsive" style="height: 120px" alt="Alexs Avatar" src="';echo SERVERURL.'vistas/assets/images/avatars/avatar6.png" />
 									</span>
 
 									<div class="space-2"></div>
@@ -470,7 +473,7 @@ class usuarioControlador extends usuarioModelo
 							<div class="col-xs-12 col-sm-3 center">
 								<div>
 									<span class="profile-picture">
-										<img id="avatar" class="editable img-responsive" style="height: 120px" alt="Alexs Avatar" src="';echo SERVERURL.'vistas/assets/images/avatars/secret.jpg" />
+										<img id="avatar" class="editable img-responsive" style="height: 120px" alt="Alexs Avatar" src="';echo SERVERURL.'vistas/assets/images/avatars/avatar6.png" />
 									</span>
 
 									<div class="space-2"></div>

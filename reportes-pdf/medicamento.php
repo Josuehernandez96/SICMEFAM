@@ -95,7 +95,7 @@ $pdf->SetFont('Times', 'B', 12);
 // Move to the right
 $pdf->Cell(80);
 // Title
-$pdf->Cell(35, 20, utf8_decode('CONSULTORIO MÉDICO DRA. ANA LUISA VELÁZQUEZ'), 0, 0, 'C');
+$pdf->Cell(35, 20, utf8_decode('CONSULTORIO MÉDICO DRA. FATIMA MARINERO'), 0, 0, 'C');
 $pdf->Cell(-35, 35, utf8_decode('MEDICINA GENERAL'), 0, 0, 'C');
 $pdf->Cell(35,65, utf8_decode('REPORTE DE MEDICAMENTOS'), 0, 0, 'C');
 // Line break

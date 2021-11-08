@@ -14,7 +14,7 @@ class loginModelo extends mainModel
 {
 	protected function iniciar_sesion_modelo($datos)
 	{
-		$sql = mainModel::conectar()->prepare("SELECT * FROM tabusuario WHERE nombre=:usuario AND contrasena=:clave  AND estado= 1");
+		$sql = mainModel::conectar()->prepare("SELECT * FROM tusuario WHERE nombre=:usuario AND contrasena=:clave  AND estado= 1");
 		$sql->bindParam(':usuario', $datos['usuario']);
 		$sql->bindParam(':clave', $datos['clave']);
 		$sql->execute();

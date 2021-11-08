@@ -75,63 +75,50 @@ class PDF extends FPDF
         // Page number
         $this->Cell(0, 10, 'Pagina ' . $this->PageNo() . '/{nb}', 0, 0, 'C');
     }
+    function title()
+    {
+        $this->SetFont("Arial", "B", 18);
+        $this->Cell(190, 10, utf8_decode('REPORTE DE USUARIO'), 0, 0, 'C');
+        $this->Ln();
+        
+    }
     function headerTable()
     {
         $this->setDrawColor(42, 255, 255);
-        $this->SetFont("Times", "B", 11);
+        $this->SetFont("Times", "B", 9);
         $this->SetX(14);
-        $this->Cell(44, 10, "Expediente", 1, 0, "L");
-        $this->Cell(105, 10, "Nombre", 1, 0, "L");
-        $this->Cell(30, 10, "Telefono", 1, 0, "L");
+        $this->Cell(10, 10, "ID:", 1, 0, "L");
+        $this->Cell(30, 10, "USUARIO:", 1, 0, "L");
+        $this->Cell(60, 10, "NOMBRE:", 1, 0, "L");
+        $this->Cell(20, 10, "CREACION:", 1, 0, "L");
+        $this->Cell(60, 10, "CORREO:", 1, 0, "L");
 
-        $this->Ln();
+        $this->Ln(10);
     }
 
 
     function viewTable()
     {
 
-        $this->SetFont("Times", "", 11);
+        $this->SetFont("Times", "", 9);
 
 
 
-        $result = self::ejecutar_consulta_simple("SELECT * FROM `tpaciente` where idpaciente =".$_REQUEST["idpaciente"]."");
+        $result = self::ejecutar_consulta_simple("SELECT * FROM `tusuario` where estado= 1");
         if ($result) {
             foreach ($result as $row) {
                 $this->SetX(14);
-                $this->Cell(44, 5, $row['n_expediente'], 1, 0, "L");
-                $this->Cell(105, 5, utf8_decode($row['nombre_paciente']) . " " . utf8_decode($row['apellido_paciente']), 1, 0, "L");
-                $this->Cell(30, 5, $row['telefonop_paciente'], 1, 0, "L");
+                $this->Cell(10, 5, $row['idusuario'], 1, 0, "L");
+                $this->Cell(30, 5, $row['nombre'], 1, 0, "L");
+                $this->Cell(60, 5, $row['nombrep'], 1, 0, "L");
+                $this->Cell(20, 5, $row['fechacreacion'], 1, 0, "L");
+                $this->Cell(60, 5, $row['correo'], 1, 0, "L");
 
-
-                $this->Ln(3);
+                $this->Ln(5);
             }
             $this->SetFont("Times", "B", 11);
         }
 
-        $this->Ln(5);
-        $this->SetX(14);
-
-        $this->Cell(50, 10, "Fecha de nacimiento", 1, 0, "L");
-        $this->Cell(30, 10, "Edad", 1, 0, "L");
-        $this->Cell(100, 10, "Direccion", 1, 0, "L");
-        $this->Ln();
-        $this->SetFont("Times", "", 11);
-
-        $result = self::ejecutar_consulta_simple("SELECT  TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) AS edad 
-        ,fecha_nacimiento,direccion_paciente FROM tpaciente  WHERE idpaciente=".$_REQUEST["idpaciente"]."");
-
-        if ($result) {
-            foreach ($result as $row) {
-                $this->SetX(14);
-                $this->Cell(50, 5, date("d/m/Y", strtotime($row['fecha_nacimiento'])) . " ", 1, 0, "L");
-                $this->Cell(30, 5, $row['edad'], 1, 0, "L");
-                $this->MultiCell(100, 5, $row['direccion_paciente'], 1, "L", 0);
-                
-
-                $this->Ln(3);
-            }
-        }
         
         $this->setDrawColor(42, 165, 165);
         $this->setLineWidth(0.5);
@@ -146,6 +133,7 @@ $pdf->AddPage();
 $pdf->SetFont('Times', '', 12);
 $pdf->headers();
 
+$pdf->title();
 $pdf->headerTable();
 $pdf->viewTable();
 $pdf->Output();

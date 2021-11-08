@@ -28,6 +28,7 @@ $submenu8 = "";
 $menu8 = "";
 $submenu9 = "";
 $submenu10 = "";
+$submenu11 = "";
 
 
 if ($_REQUEST["view"] == "citasmedicas") {
@@ -70,7 +71,7 @@ if ($_REQUEST["view"] == "inicio") {
 if ($_REQUEST["view"] == "paciente") {
     $menu4 = "active";
 }
-if ($_REQUEST["view"] == "vista-paciente.php") {
+if ($_REQUEST["view"] == "paciente") {
     $menu5 = "active";
     $submenu1 = "active";
 }
@@ -87,7 +88,7 @@ if ($_REQUEST["view"] == "expediente") {
 if ($_REQUEST["view"] == "personal") {
     $menu6 = "active";
 }
-if ($_REQUEST["view"] == "listadopersonal") {
+if ($_REQUEST["view"] == "personal") {
     $menu6 = "active";
     $submenu6 = "active";
 }
@@ -111,7 +112,7 @@ if ($_REQUEST["view"] == "reporteinventario") {
 }
 
 
-if ($_REQUEST["view"] == "seguridad") {
+if ($_REQUEST["view"] == "listadousuario") {
     $menu8 = "active";
 }
 if ($_REQUEST["view"] == "listadousuario") {
@@ -121,6 +122,10 @@ if ($_REQUEST["view"] == "listadousuario") {
 if ($_REQUEST["view"] == "reporteusuario") {
     $menu8 = "active";
     $submenu10 = "active";
+}
+if ($_REQUEST["view"] == "bitacora") {
+    $menu8 = "active";
+    $submenu11 = "active";
 }
 ?>
 
@@ -152,7 +157,7 @@ if ($_REQUEST["view"] == "reporteusuario") {
         </li>
 
         <li class="hover <?php echo $menu5; ?>" >
-            <a href="#" class="dropdown-toggle">
+            <a href="#" onclick="location.href='paciente'" class="dropdown-toggle">
                 <img src="<?php echo SERVERURL . "vistas/" ?>cough.png" style="width: 30px;height: 30px">
                 <span class="menu-text"> Paciente </span>
 
@@ -163,7 +168,7 @@ if ($_REQUEST["view"] == "reporteusuario") {
 
             <ul class="submenu">
                 <li class="hover <?php echo $submenu1; ?>">
-                    <a href="./vistas/contenido/vista-paciente.php" class="dropdown-toggle">
+                    <a href="paciente">
                         <i class="menu-icon fa fa-caret-right"></i> Listado de Pacientes
                     </a>
 
@@ -276,14 +281,14 @@ if ($_REQUEST["view"] == "reporteusuario") {
 
             <ul class="submenu">
                 <li class="hover <?php echo $submenu6; ?>">
-                    <a href="listadopersonal">
+                    <a href="personal">
                         <i class="menu-icon fa fa-caret-right"></i> Listado de Personal
                     </a>
 
                     <b class="arrow"></b>
                 </li>
                 <li class="hover <?php echo $submenu14; ?>">
-                    <a href="reportepersonal">
+                    <a href="reportes-pdf/reportepersonal.php?idpersonal=.$row["idpersonal]"">
                         <i class="menu-icon fa fa-caret-right"></i> Reporte del Personal
                     </a>
 
@@ -327,7 +332,7 @@ if ($_REQUEST["view"] == "reporteusuario") {
         </li>
 
          <li class="<?php echo $menu8; ?> hover">
-            <a href="#" onclick="location.href='seguridad'" class="dropdown-toggle">
+            <a href="#" onclick="location.href='usuario'" class="dropdown-toggle">
                 <img src="<?php echo SERVERURL . "vistas/" ?>seguro.png" style="width: 30px;height: 30px">
                 <span class="menu-text">
                     &nbspSeguridad&nbsp
@@ -339,7 +344,7 @@ if ($_REQUEST["view"] == "reporteusuario") {
 
             <ul class="submenu">
                 <li class="hover <?php echo $submenu9; ?>">
-                    <a href="listadousuario">
+                    <a href="usuario">
                         <i class="menu-icon fa fa-caret-right"></i> Listado de Usuarios
                     </a>
 
@@ -347,8 +352,16 @@ if ($_REQUEST["view"] == "reporteusuario") {
                 </li>
 
                 <li class="hover <?php echo $submenu10; ?>">
-                    <a href="reporteusuario">
-                        <i class="menu-icon fa fa-caret-right"></i> Reporte de Usuario
+                    <a href="reportes-pdf/reporteusuario.php?idusuario=.$row["idusuario]"">
+                        <i class="menu-icon fa fa-caret-right"></i> Reporte de Usuarios
+                    </a>
+                    
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="hover <?php echo $submenu11; ?>">
+                    <a href="bitacora">
+                        <i class="menu-icon fa fa-caret-right"></i> Bitacora
                     </a>
 
                     <b class="arrow"></b>

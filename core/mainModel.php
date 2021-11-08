@@ -50,7 +50,7 @@ class mainModel
 
 	protected function insertar_codigo_recuperacion_cuenta($datos)
 	{
-		$sql = self::conectar()->prepare("UPDATE `tabusuario` SET `contrasena` = :codigo WHERE `tabusuario`.`idusuario` = :idusuario; ");
+		$sql = self::conectar()->prepare("UPDATE `tusuario` SET `contrasena` = :codigo WHERE `tusuario`.`idusuario` = :idusuario; ");
 		$sql->bindparam(":codigo", $datos['codigo']);
 		$sql->bindparam(":idusuario", $datos['idusuario']);
 		
@@ -77,7 +77,7 @@ class mainModel
 
 	protected function guardar_bitacora($datos)
 	{
-		$sql = self::conectar()->prepare("INSERT INTO `tabbitacora`
+		$sql = self::conectar()->prepare("INSERT INTO `tbitacora`
 		 (`idbitacora`, `fecha_hora_accion`, `accion_bitacora`, `modulo_bitacora`, `idusuario`) 
 		VALUES (NULL, :fechahora, :accion, :modulo, :idusuario);");
 

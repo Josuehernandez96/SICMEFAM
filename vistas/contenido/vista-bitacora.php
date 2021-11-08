@@ -34,7 +34,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
 
-                                                    <div class="clearfix" style="background: #2aa5a5;color: #FFFF;padding-top: 5px;padding-right: 5px">
+                                                    <div class="clearfix" style="background: #0494AD;color: #FFFF;padding-top: 5px;padding-right: 5px">
 
                                                         <!--inicio area de botonos de tabla-->
 
@@ -43,11 +43,11 @@
                                                             <div class="dt-buttons btn-overlap btn-group">
 
 
-                                                                <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table">
+                                                                <!--<a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table">
                                                                     <span>
                                                                         <img src="<?php echo SERVERURL; ?>vistas/btn-ayuda.png" style="width: 30px;height: 30px;">&nbsp;Ayuda</span>
                                                                     </span>
-                                                                </a>
+                                                                </a>-->
                                                             </div>
 
                                                             <!--fin area de botonos-->
@@ -110,11 +110,11 @@
                                                                             <select id="busqueda" aria-controls="dynamic-table" class="form-control input-sm">
                                                                                 <option value="Todo">Todo</option>
                                                                                 <option value="PACIENTE">Paciente</option>
-                                                                                <option value="CITA">Citas</option>
+                                                                                <!--<option value="CITA">Citas</option>
                                                                                 <option value="CONSULTA">Consulta</option>
-                                                                                <option value="MEDICAMENTO">Medicamentos</option>
+                                                                                <option value="MEDICAMENTO">Medicamentos</option>-->
                                                                                 <option value="USUARIO">Usuarios</option>
-                                                                                <option value="RESPALDO">Respaldo</option>
+                                                                                <!--<option value="RESPALDO">Respaldo</option>-->
                                                                                 <option value="LOGIN">Login</option>
 
                                                                             </select>

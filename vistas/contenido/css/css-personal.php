@@ -1,7 +1,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Paciente - SICMEFAM</title>
+    <title>Personal - SICMEFAM</title>
 
     <meta name="description" content="top menu &amp; navigation" />
 

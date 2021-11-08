@@ -7,7 +7,7 @@
                 <i class="ace-icon fa fa-group"></i>/
                 <font style="vertical-align: inherit;">
 
-                    PACIENTES
+                    PERSONAL
 
 
                 </font>
@@ -42,12 +42,7 @@
 
                                             <div class="dt-buttons btn-overlap btn-group">
 
-                                                <!--<a class="dt-button buttons-collection buttons-colvis btn-primary btn-bold"color="#E6FAFB" aria-controls="dynamic-table" data-original-title="" title="" data-toggle="modal" data-backdrop="static" data-keyboard="false" onclick="nuevoregistro()" data-target="#modal-rgpaciente">
-                                                    <span>
-                                                        <img src="<?php echo SERVERURL; ?>vistas/agregar.png" style="width: 40px;height: 40px;">&nbsp;Nuevo</span>
-                                                    </span>
-                                                </a>-->
-                                                <a class="dt-button buttons-collection buttons-colvis btn btn-success btn-primary btn-bold" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-rgpaciente" aria-controls="dynamic-table">
+                                          <a class="dt-button buttons-collection buttons-colvis btn btn-success btn-primary btn-bold" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-rgpersonal" aria-controls="dynamic-table">
                                                     <span>
                                                         <i class="fa fa-plus-circle" aria-hidden="true" style="width: 30px;height: 20px;">&nbsp; </i> Nuevo
                                                     </span>
@@ -113,8 +108,8 @@
 
                                                 <?php
 
-                                                require_once "./controladores/pacienteControlador.php";
-                                                $insAdmin = new pacienteControlador();
+                                                require_once "./controladores/personalControlador.php";
+                                                $insAdmin = new personalControlador();
 
                                                 $insAdmin->paginador_administrador_controlador();
 
@@ -144,8 +139,8 @@
     <!-- /.row -->
 </div>
 
-<?php include 'modales/modal-paciente.php'; ?>
-<?php include 'scripts/scripts-paciente.php'; ?>
+<?php include 'modales/modal-personal.php'; ?>
+<?php include 'scripts/scripts-personal.php'; ?>
 
 <?php
 if ($_SESSION["rgnuevo"] != "0" && $_SESSION["idcita"] != "0") {
@@ -154,7 +149,7 @@ if ($_SESSION["rgnuevo"] != "0" && $_SESSION["idcita"] != "0") {
     echo "var idcita='" . $_SESSION["idcita"] . "';";
     echo "var esdecita='" . $_SESSION["rgnuevo"] . "';";
 
-    echo "$('#modal-rgpaciente').modal('show');
+    echo "$('#modal-rgpersonal').modal('show');
         nuevoregistro();
         </script>";
 } else {

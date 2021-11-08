@@ -2,7 +2,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header no-padding">
-                <div class="table-header" style="background: #2aa5a5">
+                <div class="table-header" style="background: #0494AD">
                     <button type="button" class="close" data-dismiss="modal" onclick="cancelar()" aria-hidden="true">
                         <span class="white">&times;</span>
                     </button>
@@ -119,24 +119,36 @@
             <div class="modal-footer no-margin-top ">
 
 
-                <button class="btn btn-primary btn-white btn-round pull-left" style="margin-top: 10px" id="btnguardar">
+                <!--<button class="btn btn-primary btn-white btn-round pull-left" style="margin-top: 10px" id="btnguardar">
 
                     <img src="<?php echo SERVERURL; ?>vistas/btn-agregar.png" style="width: 30px;height: 30px;"> Guardar
 
+                </button>-->
+                <button class="btn btn-primary btn-round pull-left" style="margin-top: 10px;background-color: #7EBDFB" id="btnguardar" >
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                     Guardar
+
                 </button>
 
-                <button class="btn btn-primary btn-white btn-round pull-left" style="margin-top: 10px" id="btneditar">
+                <button class="btn btn-primary btn-round pull-left" style="margin-top: 10px" id="btneditar">
 
-                    <img src="<?php echo SERVERURL; ?>vistas/btn-agregar.png" style="width: 30px;height: 30px;"> Guardar Cambios
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                     Guardar cambios
 
                 </button>
 
 
-                <button class=" btn btn-danger btn-white btn-round pull-left" style="margin-top: 10px" onclick="cancelar()" data-dismiss="modal">
+                <!--<button class=" btn btn-danger btn-white btn-round pull-left" style="margin-top: 10px" onclick="cancelar()" data-dismiss="modal">
 
                     <img src="<?php echo SERVERURL; ?>vistas/btn-cancelar.png" style="width: 30px;height: 30px;"> Cancelar
 
+                </button>-->
+                <button class=" btn btn-danger btn-round pull-left" style="margin-top: 10px;background-color: #FC4D31" onclick="limpiarmodal()">
+                    <i class="fa fa-times"></i>
+                     Cancelar
+
                 </button>
+
 
                 <button class="btn btn-danger   pull-rigth " style="margin-top: 10px;;margin-rigth:25px;color:#2aa5a5 ;visibility: hidden; padding: 6px 0px;" id="alerta">
 

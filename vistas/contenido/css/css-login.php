@@ -1,7 +1,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta charset="utf-8" />
-	<title> Inicio de sesión - SICMEDIC</title>
+	<title> Inicio de sesión - SICMEFAM</title>
 
 	<meta name="description" content="User login page" />
 

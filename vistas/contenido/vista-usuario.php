@@ -42,7 +42,7 @@
 
                                 <div class="col-sm-12">
 
-                                    <div class="clearfix" style="background: #2aa5a5;color: #FFFF;padding-top: 5px;padding-right: 5px">
+                                    <div class="clearfix" style="background: #0494AD;color: #FFFF;padding-top: 5px;padding-right: 5px">
 
                                         <!--inicio area de botonos de tabla-->
 
@@ -50,18 +50,22 @@
 
                                             <div class="dt-buttons btn-overlap btn-group">
 
-                                                <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table" data-original-title="" title="" onclick="nuevoregistro()" data-backdrop="static" data-keyboard="false" data-toggle="modal"  data-target="#modal-rgusuario">
+                                                <!--<a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table" data-original-title="" title="" onclick="nuevoregistro()" data-backdrop="static" data-keyboard="false" data-toggle="modal"  data-target="#modal-rgusuario">
                                                     <span>
                                                         <img src="<?php echo SERVERURL ;?>vistas/btn-nuevo.png" style="width: 30px;height: 30px;">&nbsp;Nuevo</span>
                                                     </span>
+                                                </a>-->
+                                                <a class="dt-button buttons-collection buttons-colvis btn btn-success btn-primary btn-bold" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-rgusuario" aria-controls="dynamic-table">
+                                                    <span>
+                                                        <i class="fa fa-plus-circle" aria-hidden="true" style="width: 30px;height: 20px;">&nbsp; </i> Nuevo
+                                                    </span>
                                                 </a>
 
-
-                                                <a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table">
+                                                <!--<a class="dt-button buttons-collection buttons-colvis btn btn-white btn-primary btn-bold" aria-controls="dynamic-table">
                                                     <span>
                                                         <img src="<?php echo SERVERURL ;?>vistas/btn-ayuda.png" style="width: 30px;height: 30px;">&nbsp;Ayuda</span>
                                                     </span>
-                                                </a>
+                                                </a>-->
                                             </div>
 
                                             <!--fin area de botonos-->
